@@ -145,7 +145,7 @@ Use the built-in test endpoint to verify email configuration:
 
 ```bash
 # Test welcome email
-curl -X POST https://refferq-neon.vercel.app//api/admin/emails/test \
+curl -X POST https://refferq-neon.vercel.app/api/admin/emails/test \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer YOUR_JWT_TOKEN" \
   -d '{
@@ -155,7 +155,7 @@ curl -X POST https://refferq-neon.vercel.app//api/admin/emails/test \
       "name": "Test User",
       "email": "test@example.com",
       "role": "affiliate",
-      "loginUrl": "https://refferq-neon.vercel.app//login"
+      "loginUrl": "https://refferq-neon.vercel.app/login"
     }
   }'
 ```

@@ -312,7 +312,7 @@ Details:
 # Start development server
 npm run dev
 
-# Navigate to https://refferq-neon.vercel.app//register
+# Navigate to https://refferq-neon.vercel.app/register
 # Fill in:
 #   Name: Test Affiliate
 #   Email: test@example.com
@@ -383,7 +383,7 @@ npm run test:email your-email@example.com
 
 ### 3. Test Registration Flow
 1. Start app: `npm run dev`
-2. Go to https://refferq-neon.vercel.app//register
+2. Go to https://refferq-neon.vercel.app/register
 3. Register with your email
 4. Check inbox for welcome email
 

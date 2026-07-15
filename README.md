@@ -232,7 +232,7 @@ Refferq uses [Resend](https://resend.com) for sending transactional emails. Foll
 
 4. **Test Email Setup** (Optional)
    ```bash
-   curl -X POST https://refferq-neon.vercel.app//api/admin/emails/test \
+   curl -X POST https://refferq-neon.vercel.app/api/admin/emails/test \
      -H "Content-Type: application/json" \
      -d '{"type": "welcome", "to": "test@example.com"}'
    ```

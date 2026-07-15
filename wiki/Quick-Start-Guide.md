@@ -126,7 +126,7 @@ npm run dev
 
 ## Step 6: Create Admin Account
 
-1. **Open browser:** https://refferq-neon.vercel.app//register
+1. **Open browser:** https://refferq-neon.vercel.app/register
 
 2. **Fill registration form:**
    - Name: `Your Name`
@@ -146,7 +146,7 @@ WHERE email = 'admin@example.com';
 \q
 ```
 
-4. **Login:** https://refferq-neon.vercel.app//login
+4. **Login:** https://refferq-neon.vercel.app/login
 
 ---
 
@@ -171,7 +171,7 @@ Your Refferq instance is now running at **https://refferq-neon.vercel.app/**
 ### What's Next?
 
 #### Explore the Platform
-- 🏠 **Dashboard** - https://refferq-neon.vercel.app//admin
+- 🏠 **Dashboard** - https://refferq-neon.vercel.app/admin
 - 👥 **Manage Affiliates** - Approve/reject applications
 - 📊 **View Analytics** - Track performance metrics
 - 💰 **Process Payouts** - Handle commission payments
@@ -183,7 +183,7 @@ Your Refferq instance is now running at **https://refferq-neon.vercel.app/**
 - Add payment information
 
 #### Invite Affiliates
-- Share registration link: https://refferq-neon.vercel.app//register
+- Share registration link: https://refferq-neon.vercel.app/register
 - Affiliates sign up (status: PENDING)
 - Approve them in admin dashboard
 - They can start referring!
