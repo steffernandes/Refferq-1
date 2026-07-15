@@ -493,7 +493,7 @@ export default function ProgramSettingsPage() {
                       <Badge variant="outline">{rule.type}</Badge>
                     </TableCell>
                     <TableCell>
-                      {rule.type === 'PERCENTAGE' ? `${rule.value}%` : `₹${rule.value}`}
+                      {rule.type === 'PERCENTAGE' ? `${rule.value}%` : `€${rule.value}`}
                     </TableCell>
                     <TableCell>
                       {rule.isDefault && <Badge variant="default">Default</Badge>}

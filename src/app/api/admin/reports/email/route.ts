@@ -257,7 +257,7 @@ function renderTableHTML(data: Record<string, unknown>[]): string {
             .map((c) => {
               const v = row[c];
               if (typeof v === 'number' && c.toLowerCase().includes('cents')) {
-                return `<td>₹${(v / 100).toFixed(2)}</td>`;
+                return `<td>€${(v / 100).toFixed(2)}</td>`;
               }
               return `<td>${v ?? '—'}</td>`;
             })
