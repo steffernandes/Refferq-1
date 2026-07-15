@@ -182,7 +182,7 @@ export const PartnerRow = ({
 
       <div className="text-right px-4">
         <div className="text-xs text-gray-500 mb-1">Revenue</div>
-        <div className="font-bold text-gray-900">₹{(revenue / 100).toFixed(2)}</div>
+        <div className="font-bold text-gray-900">€{(revenue / 100).toFixed(2)}</div>
       </div>
 
       <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold ${style.bg} ${style.text}`}>

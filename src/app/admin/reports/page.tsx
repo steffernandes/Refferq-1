@@ -903,10 +903,10 @@ export default function ReportsPage() {
                             <TableCell className="text-right">{c.conversionRate}%</TableCell>
                             <TableCell className="text-right">{c.totalCommissions}</TableCell>
                             <TableCell className="text-right font-medium">
-                              ₹{(c.totalEarningsCents / 100).toLocaleString('en-IN', { minimumFractionDigits: 2 })}
+                              €{(c.totalEarningsCents / 100).toLocaleString('pt-PT', { minimumFractionDigits: 2 })}
                             </TableCell>
                             <TableCell className="text-right text-muted-foreground">
-                              ₹{(c.avgEarningsPerAffiliateCents / 100).toLocaleString('en-IN', { minimumFractionDigits: 2 })}
+                              €{(c.avgEarningsPerAffiliateCents / 100).toLocaleString('pt-PT', { minimumFractionDigits: 2 })}
                             </TableCell>
                           </TableRow>
                         ))}
