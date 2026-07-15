@@ -584,7 +584,7 @@ export default function ProgramSettingsPage() {
               <div>
                 <div className="flex items-center justify-between mb-2">
                   <Label className="text-sm font-medium">Call this when a visitor completes a conversion event</Label>
-                  <Button variant="ghost" size="sm" onClick={() => handleCopySnippet('conversion', `// Track a conversion (e.g. after signup or purchase)\nRefferq.trackConversion({\n  email: customer.email,\n  name: customer.name,\n  amount: 4999,        // amount in smallest unit (e.g. paise / cents)\n  currency: '${settings.currency || 'INR'}',\n  orderId: 'ORD-12345' // optional\n});`)}>
+                  <Button variant="ghost" size="sm" onClick={() => handleCopySnippet('conversion', `// Track a conversion (e.g. after signup or purchase)\nRefferq.trackConversion({\n  email: customer.email,\n  name: customer.name,\n  amount: 4999,        // amount in smallest unit (e.g. paise / cents)\n  currency: '${settings.currency || 'EUR'}',\n  orderId: 'ORD-12345' // optional\n});`)}>
                     {copiedSnippet === 'conversion' ? <><CheckCircle2 className="mr-1 h-3.5 w-3.5 text-green-600" />Copied</> : <><Copy className="mr-1 h-3.5 w-3.5" />Copy</>}
                   </Button>
                 </div>
@@ -594,7 +594,7 @@ Refferq.trackConversion({
   email: customer.email,
   name: customer.name,
   amount: 4999,        // amount in smallest unit (e.g. paise / cents)
-  currency: '${settings.currency || 'INR'}',
+  currency: '${settings.currency || 'EUR'}',
   orderId: 'ORD-12345' // optional
 });`}
                 </div>
