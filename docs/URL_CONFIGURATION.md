@@ -17,7 +17,7 @@ All application URLs have been updated from localhost to production domains:
 
 ### 2. Application Code
 - **`src/app/api/auth/register/route.ts`** - Updated default login URL fallback
-  - Changed: `http://localhost:3000` → `https://app.refferq.com`
+  - Changed: `https://refferq-neon.vercel.app/` → `https://app.refferq.com`
 
 ### 3. Documentation
 - **`README.md`** - Updated app URL examples and curl commands

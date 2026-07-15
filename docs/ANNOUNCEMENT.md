@@ -104,7 +104,7 @@ npm run db:push
 npm run dev
 ```
 
-That's it! Open http://localhost:3000
+That's it! Open https://refferq-neon.vercel.app/
 
 ---
 

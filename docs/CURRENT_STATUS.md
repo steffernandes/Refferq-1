@@ -189,13 +189,13 @@ created_at    TIMESTAMP
 ### API Testing:
 ```bash
 # Test dashboard stats
-curl http://localhost:3000/api/admin/dashboard
+curl https://refferq-neon.vercel.app//api/admin/dashboard
 
 # Test referrals list
-curl http://localhost:3000/api/admin/referrals
+curl https://refferq-neon.vercel.app//api/admin/referrals
 
 # Test partner groups
-curl http://localhost:3000/api/admin/partner-groups
+curl https://refferq-neon.vercel.app//api/admin/partner-groups
 ```
 
 ---
@@ -303,10 +303,10 @@ const count = await prisma.affiliate.count({
 
 ## 🔗 Quick Links
 
-- **Dev Server:** http://localhost:3000
+- **Dev Server:** https://refferq-neon.vercel.app/
 - **Prisma Studio:** Run `npx prisma studio`
-- **Admin Dashboard:** http://localhost:3000/admin
-- **Affiliate Dashboard:** http://localhost:3000/affiliate
+- **Admin Dashboard:** https://refferq-neon.vercel.app//admin
+- **Affiliate Dashboard:** https://refferq-neon.vercel.app//affiliate
 
 ---
 

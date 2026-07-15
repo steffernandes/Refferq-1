@@ -32,7 +32,7 @@ export async function POST(request: NextRequest) {
       name: 'Test User',
       email: 'test@example.com',
       role: 'affiliate',
-      loginUrl: 'http://localhost:3000',
+      loginUrl: 'https://refferq-neon.vercel.app/',
     });
 
     return NextResponse.json({

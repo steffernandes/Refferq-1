@@ -24,7 +24,7 @@ The Refferq API is a RESTful API that allows you to programmatically interact wi
 ### Base URL
 
 ```
-http://localhost:3000/api  # Development
+https://refferq-neon.vercel.app//api  # Development
 https://yourdomain.com/api  # Production
 ```
 
@@ -47,7 +47,7 @@ Refferq uses a passwordless OTP (One-Time Password) authentication flow:
 **Endpoint:** `POST /api/auth/send-otp`
 
 ```bash
-curl -X POST http://localhost:3000/api/auth/send-otp \
+curl -X POST https://refferq-neon.vercel.app//api/auth/send-otp \
   -H "Content-Type: application/json" \
   -d '{
     "email": "user@example.com"
@@ -67,7 +67,7 @@ curl -X POST http://localhost:3000/api/auth/send-otp \
 **Endpoint:** `POST /api/auth/verify-otp`
 
 ```bash
-curl -X POST http://localhost:3000/api/auth/verify-otp \
+curl -X POST https://refferq-neon.vercel.app//api/auth/verify-otp \
   -H "Content-Type: application/json" \
   -d '{
     "email": "user@example.com",
@@ -96,7 +96,7 @@ The JWT token is set automatically as an HTTP-only cookie (`auth-token`).
 The `auth-token` cookie is sent automatically with browser requests. For programmatic access:
 
 ```bash
-curl -X GET http://localhost:3000/api/auth/me \
+curl -X GET https://refferq-neon.vercel.app//api/auth/me \
   --cookie "auth-token=YOUR_JWT_TOKEN"
 ```
 
@@ -328,7 +328,7 @@ API rate limiting is enforced via a sliding-window algorithm backed by the datab
 ### Register New Affiliate
 
 ```bash
-curl -X POST http://localhost:3000/api/auth/register \
+curl -X POST https://refferq-neon.vercel.app//api/auth/register \
   -H "Content-Type: application/json" \
   -d '{
     "name": "John Doe",
@@ -355,7 +355,7 @@ curl -X POST http://localhost:3000/api/auth/register \
 ### Submit Referral
 
 ```bash
-curl -X POST http://localhost:3000/api/affiliate/referrals \
+curl -X POST https://refferq-neon.vercel.app//api/affiliate/referrals \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer YOUR_JWT_TOKEN" \
   -d '{
@@ -385,7 +385,7 @@ curl -X POST http://localhost:3000/api/affiliate/referrals \
 ### Approve Referral (Admin)
 
 ```bash
-curl -X PUT http://localhost:3000/api/admin/referrals/456 \
+curl -X PUT https://refferq-neon.vercel.app//api/admin/referrals/456 \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer ADMIN_JWT_TOKEN" \
   -d '{
@@ -416,7 +416,7 @@ curl -X PUT http://localhost:3000/api/admin/referrals/456 \
 ### Get Dashboard Analytics (Admin)
 
 ```bash
-curl -X GET http://localhost:3000/api/admin/dashboard \
+curl -X GET https://refferq-neon.vercel.app//api/admin/dashboard \
   -H "Authorization: Bearer ADMIN_JWT_TOKEN"
 ```
 
@@ -543,7 +543,7 @@ Download our Postman collection: **Coming soon**
 Use the test email endpoint to verify configuration:
 
 ```bash
-curl -X POST http://localhost:3000/api/test/email \
+curl -X POST https://refferq-neon.vercel.app//api/test/email \
   -H "Content-Type: application/json" \
   -d '{
     "type": "welcome",

@@ -60,7 +60,7 @@ RESEND_API_KEY="re_xxxxxxxxxxxxx"
 RESEND_FROM_EMAIL="Refferq <onboarding@resend.dev>"
 
 # App URL
-NEXT_PUBLIC_APP_URL="http://localhost:3000"
+NEXT_PUBLIC_APP_URL="https://refferq-neon.vercel.app/"
 ```
 
 ### Quick Tips:
@@ -118,7 +118,7 @@ npm run dev
 **Output:**
 ```
 ▲ Next.js 15.2.3
-- Local:        http://localhost:3000
+- Local:        https://refferq-neon.vercel.app/
 - Ready in 2.3s
 ```
 
@@ -126,7 +126,7 @@ npm run dev
 
 ## Step 6: Create Admin Account
 
-1. **Open browser:** http://localhost:3000/register
+1. **Open browser:** https://refferq-neon.vercel.app//register
 
 2. **Fill registration form:**
    - Name: `Your Name`
@@ -146,7 +146,7 @@ WHERE email = 'admin@example.com';
 \q
 ```
 
-4. **Login:** http://localhost:3000/login
+4. **Login:** https://refferq-neon.vercel.app//login
 
 ---
 
@@ -166,12 +166,12 @@ npm run test:email admin@example.com
 
 ## 🎉 You're All Set!
 
-Your Refferq instance is now running at **http://localhost:3000**
+Your Refferq instance is now running at **https://refferq-neon.vercel.app/**
 
 ### What's Next?
 
 #### Explore the Platform
-- 🏠 **Dashboard** - http://localhost:3000/admin
+- 🏠 **Dashboard** - https://refferq-neon.vercel.app//admin
 - 👥 **Manage Affiliates** - Approve/reject applications
 - 📊 **View Analytics** - Track performance metrics
 - 💰 **Process Payouts** - Handle commission payments
@@ -183,7 +183,7 @@ Your Refferq instance is now running at **http://localhost:3000**
 - Add payment information
 
 #### Invite Affiliates
-- Share registration link: http://localhost:3000/register
+- Share registration link: https://refferq-neon.vercel.app//register
 - Affiliates sign up (status: PENDING)
 - Approve them in admin dashboard
 - They can start referring!

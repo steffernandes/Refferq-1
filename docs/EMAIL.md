@@ -59,7 +59,7 @@ RESEND_FROM_EMAIL="Refferq <onboarding@resend.dev>"
 ADMIN_EMAILS="admin@yourdomain.com,support@yourdomain.com"
 
 # Application URL (required for email links)
-NEXT_PUBLIC_APP_URL="http://localhost:3000"
+NEXT_PUBLIC_APP_URL="https://refferq-neon.vercel.app/"
 ```
 
 ### Step 5: Development vs Production
@@ -145,7 +145,7 @@ Use the built-in test endpoint to verify email configuration:
 
 ```bash
 # Test welcome email
-curl -X POST http://localhost:3000/api/admin/emails/test \
+curl -X POST https://refferq-neon.vercel.app//api/admin/emails/test \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer YOUR_JWT_TOKEN" \
   -d '{
@@ -155,7 +155,7 @@ curl -X POST http://localhost:3000/api/admin/emails/test \
       "name": "Test User",
       "email": "test@example.com",
       "role": "affiliate",
-      "loginUrl": "http://localhost:3000/login"
+      "loginUrl": "https://refferq-neon.vercel.app//login"
     }
   }'
 ```
@@ -307,7 +307,7 @@ ADMIN_EMAILS=""                # Comma-separated admin emails
 RESEND_API_KEY="re_123abc456def789ghi"
 RESEND_FROM_EMAIL="Refferq <onboarding@resend.dev>"
 ADMIN_EMAILS="admin@example.com"
-NEXT_PUBLIC_APP_URL="http://localhost:3000"
+NEXT_PUBLIC_APP_URL="https://refferq-neon.vercel.app/"
 ```
 
 ## Migration from Other Email Services

@@ -13,7 +13,7 @@ services:
       - RESEND_API_KEY=${RESEND_API_KEY:-}
       - RESEND_FROM_EMAIL=${RESEND_FROM_EMAIL:-Refferq <onboarding@resend.dev>}
       - ADMIN_EMAILS=${ADMIN_EMAILS:-}
-      - NEXT_PUBLIC_APP_URL=${NEXT_PUBLIC_APP_URL:-http://localhost:3000}
+      - NEXT_PUBLIC_APP_URL=${NEXT_PUBLIC_APP_URL:-https://refferq-neon.vercel.app/}
     depends_on:
       db:
         condition: service_healthy

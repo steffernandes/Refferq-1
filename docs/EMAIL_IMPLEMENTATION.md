@@ -15,7 +15,7 @@ Added welcome email sending after successful user registration:
 ```typescript
 // Send welcome email (non-blocking - don't fail registration if email fails)
 try {
-  const loginUrl = `${process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'}/login`;
+  const loginUrl = `${process.env.NEXT_PUBLIC_APP_URL || 'https://refferq-neon.vercel.app/'}/login`;
   await emailService.sendWelcomeEmail({
     name: result.user!.name,
     email: result.user!.email,
@@ -83,7 +83,7 @@ RESEND_FROM_EMAIL="Refferq <onboarding@resend.dev>"
 ADMIN_EMAILS="admin@yourdomain.com"
 
 # Application URL
-NEXT_PUBLIC_APP_URL="http://localhost:3000"
+NEXT_PUBLIC_APP_URL="https://refferq-neon.vercel.app/"
 ```
 
 **Documentation Updated:**
@@ -259,7 +259,7 @@ User's Email Inbox
 RESEND_API_KEY="re_xxxxxxxxxxxxx"
 RESEND_FROM_EMAIL="Refferq <onboarding@resend.dev>"
 ADMIN_EMAILS="admin@example.com"
-NEXT_PUBLIC_APP_URL="http://localhost:3000"
+NEXT_PUBLIC_APP_URL="https://refferq-neon.vercel.app/"
 ```
 
 ### Production
@@ -293,7 +293,7 @@ npm run test:email your-email@example.com
 📋 Checking Environment Variables:
   ✅ RESEND_API_KEY - re_BbhH...v5VZ
   ✅ RESEND_FROM_EMAIL - Refferq <onboarding@resend.dev>
-  ✅ NEXT_PUBLIC_APP_URL - http://localhost:3000
+  ✅ NEXT_PUBLIC_APP_URL - https://refferq-neon.vercel.app/
 
 📧 Sending test email to: your-email@example.com
 
@@ -312,7 +312,7 @@ Details:
 # Start development server
 npm run dev
 
-# Navigate to http://localhost:3000/register
+# Navigate to https://refferq-neon.vercel.app//register
 # Fill in:
 #   Name: Test Affiliate
 #   Email: test@example.com
@@ -383,7 +383,7 @@ npm run test:email your-email@example.com
 
 ### 3. Test Registration Flow
 1. Start app: `npm run dev`
-2. Go to http://localhost:3000/register
+2. Go to https://refferq-neon.vercel.app//register
 3. Register with your email
 4. Check inbox for welcome email
 

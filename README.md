@@ -190,7 +190,7 @@ RESEND_FROM_EMAIL="Refferq <onboarding@resend.dev>"
 ADMIN_EMAILS="admin@yourdomain.com"
 
 # Application URL
-NEXT_PUBLIC_APP_URL="http://localhost:3000"
+NEXT_PUBLIC_APP_URL="https://refferq-neon.vercel.app/"
 
 # Optional: Stripe (for payments)
 STRIPE_SECRET_KEY="sk_test_..."
@@ -232,7 +232,7 @@ Refferq uses [Resend](https://resend.com) for sending transactional emails. Foll
 
 4. **Test Email Setup** (Optional)
    ```bash
-   curl -X POST http://localhost:3000/api/admin/emails/test \
+   curl -X POST https://refferq-neon.vercel.app//api/admin/emails/test \
      -H "Content-Type: application/json" \
      -d '{"type": "welcome", "to": "test@example.com"}'
    ```
@@ -252,7 +252,7 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [https://refferq-neon.vercel.app/](https://refferq-neon.vercel.app/) in your browser.
 
 ### Step 7: Create Admin Account
 
