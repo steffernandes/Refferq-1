@@ -239,7 +239,7 @@ export default function CouponsPage() {
                     </TableCell>
                     <TableCell>
                       <Badge variant="outline">
-                        {c.discountType === 'PERCENTAGE' ? `${c.discountValue}%` : `€${c.discountValue}`}
+                        {c.discountType === 'PERCENTAGE' ? `${c.discountValue}%` : `₹${c.discountValue}`}
                       </Badge>
                     </TableCell>
                     <TableCell className="text-sm">{c.usedCount}{c.maxUses ? `/${c.maxUses}` : ''}</TableCell>

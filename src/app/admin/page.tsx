@@ -150,7 +150,7 @@ export default function AdminDashboardPage() {
     },
     {
       title: 'Confirmed Revenue',
-      value: `€${stats ? (stats.totalRevenue / 100).toFixed(2) : '0.00'}`,
+      value: `₹${stats ? (stats.totalRevenue / 100).toFixed(2) : '0.00'}`,
       icon: TrendingUp,
       description: 'Approved transactions',
       color: 'text-emerald-600',
@@ -158,7 +158,7 @@ export default function AdminDashboardPage() {
     },
     {
       title: 'Commission Owed',
-      value: `€${stats ? (stats.totalEstimatedCommission / 100).toFixed(2) : '0.00'}`,
+      value: `₹${stats ? (stats.totalEstimatedCommission / 100).toFixed(2) : '0.00'}`,
       icon: Wallet,
       description: 'Pending payouts',
       color: 'text-amber-600',
