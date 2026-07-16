@@ -644,7 +644,7 @@ model Program {
   currency          String   @default("EUR")
   isActive          Boolean  @default(true) @map("is_active")
   isDefault         Boolean  @default(false) @map("is_default")
-  autoApprove       Boolean  @default(false) @map("auto_approve")
+  autoApprove       Boolean  @default(true) @map("auto_approve")
   minPayoutCents    Int      @default(100000) @map("min_payout_cents") // 1000 INR
   payoutFrequency   String   @default("MONTHLY") @map("payout_frequency")
   termsUrl          String?  @map("terms_url")
