@@ -37,7 +37,7 @@ model User {
   name          String?
   password      String
   role          Role      @default(AFFILIATE)
-  status        UserStatus @default(PENDING)
+  status        UserStatus @default(ACTIVE)
   lastLogin     DateTime?
   emailVerified Boolean   @default(false)
   createdAt     DateTime  @default(now())
@@ -118,7 +118,7 @@ model Affiliate {
 | `id` | String | Unique affiliate ID | cuid() |
 | `userId` | String | Foreign key to User | User.id |
 | `company` | String? | Company/website name | "Tech Blog Inc" |
-| `country` | String? | Country code | "US" |
+| `country` | String? | Country code | "PT" |
 | `totalEarnings` | Float | All-time earnings | 1250.50 |
 | `pendingPayout` | Float | Unpaid commissions | 150.00 |
 | `referralCode` | String | Unique tracking code | "AFF123XYZ" |
@@ -161,7 +161,7 @@ model Referral {
   customerName  String
   customerEmail String
   customerPhone String?
-  status        ReferralStatus @default(PENDING)
+  status        ReferralStatus @default(ACTIVE)
   revenue       Float?
   notes         String?
   submittedAt   DateTime       @default(now())
@@ -182,7 +182,7 @@ model Referral {
 | `customerName` | String | Lead's full name | "John Doe" |
 | `customerEmail` | String | Lead's email | "john@example.com" |
 | `customerPhone` | String? | Lead's phone | "+1234567890" |
-| `status` | ReferralStatus | Processing status | PENDING |
+| `status` | ReferralStatus | Processing status | ACTIVE |
 | `revenue` | Float? | Sale amount (optional) | 99.99 |
 | `notes` | String? | Admin notes | "High value lead" |
 | `submittedAt` | DateTime | Submission timestamp | Auto |
@@ -500,7 +500,7 @@ async function main() {
       productName: 'Refferq',
       programName: 'Refferq Partners',
       websiteUrl: 'https://refferq.com',
-      currency: 'USD',
+      currency: 'EUR',
       payoutThreshold: 50.0
     }
   })
