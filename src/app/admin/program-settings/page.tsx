@@ -69,7 +69,8 @@ interface ProgramSettings {
   programName: string;
   websiteUrl: string;
  // TODO: CHANGE TO THIS ->> const initialStatus = userRoleLower === 'admin' ? 'ACTIVE' : 'PENDING';
-const initialStatus =  'ACTIVE';  portalSubdomain: string;
+ initialStatus:  'ACTIVE';  
+portalSubdomain: string;
   minimumPayoutThreshold: number;
   payoutTerm: string;
   commissionHoldDays: number;
